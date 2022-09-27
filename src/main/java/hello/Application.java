@@ -58,7 +58,13 @@ public class Application {
 //    System.out.println(arenaUpdate);
     String[] commands = new String[]{"T", "T", "L", "T"};
     int i = new Random().nextInt(4);
-//	PlayerState myState = new PlayerState();
+	String command = commands[i];
+
+	PlayerState myState = new PlayerState();
+	
+	if (myState.wasHit) return "T";
+	else return "L";
+	
 //	PlayerState myState = new PlayerState();
 
 //    List myDim = new List(arenaUpdate.arena.dims);
@@ -73,7 +79,7 @@ public class Application {
 	
 //	return "F";
     
-    return commands[i];
+//    return commands[i];
   }
 
 }
