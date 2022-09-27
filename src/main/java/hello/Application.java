@@ -60,6 +60,9 @@ public class Application {
     int i = new Random().nextInt(4);
 	String command = commands[i];
 
+    List myDim = new List(arenaUpdate.arena.dims);
+	System.out.println("y = " + myDim.get(0) + ", x = " + myDim.get(1) );
+
 	PlayerState myState = new PlayerState();
 	
 	if (myState.wasHit) return "T";
@@ -67,9 +70,7 @@ public class Application {
 	
 //	PlayerState myState = new PlayerState();
 
-//    List myDim = new List(arenaUpdate.arena.dims);
 //	myState = (PlayerState)arenaUpdate.arena.state.get("https://cloud-run-hackathon-java-springboot-yzqf6q4kqq-uc.a.run.app");
-//	System.out.println("y = " + myDim.get(0) + ", x = " + myDim.get(1) );
 	//if (myState.
 	//this.arena = arenaUpdate.get("arena")
     // TODO add your implementation here to replace the random response. 
