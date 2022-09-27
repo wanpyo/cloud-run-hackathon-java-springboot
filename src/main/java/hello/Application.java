@@ -62,8 +62,10 @@ public class Application {
     // TODO add your implementation here to replace the random response. 
     System.out.println("      i = " + i );
 	System.out.println("Command = " + commands[i] );
+	
+	return "F";
     
-    return commands[i];
+//    return commands[i];
   }
 
 }
