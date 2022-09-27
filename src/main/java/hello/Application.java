@@ -60,18 +60,24 @@ public class Application {
     int i = new Random().nextInt(4);
 	String command = commands[i];
 
-    // TODO add your implementation here to replace the random response. 
-    List<Integer> myDim = arenaUpdate.arena.dims;
-	System.out.println("Dim x = " + myDim.get(0) + ", Dim y = " + myDim.get(1) );
-
+    // TODO add your implementation here to replace the random response.
 	PlayerState myState = new PlayerState();
 	myState = (PlayerState)arenaUpdate.arena.state.get("https://cloud-run-hackathon-java-springboot-yzqf6q4kqq-uc.a.run.app");
-    System.out.println("x = " + myState.x + ", y = " + myState.y );
+
+    if (myState.wasHit) return "T";
+	
+	List<Integer> myDim = arenaUpdate.arena.dims;
+	
+	if (myState.direction.equals("W")) {
+		if ( myState.x > 0 ) return "F";
+		return "L";
+	}
+
+	//System.out.println("Dim x = " + myDim.get(0) + ", Dim y = " + myDim.get(1) );
+	System.out.println("x = " + myState.x + ", y = " + myState.y );
 	System.out.println("Direction = " + myState.direction );
 	
-	if (myState.wasHit) return "T";
-	else return "T";
-//    return commands[i];
+    return commands[i];
   }
 
 }
