@@ -58,8 +58,10 @@ public class Application {
     System.out.println(arenaUpdate);
     String[] commands = new String[]{"F", "R", "L", "T"};
     int i = new Random().nextInt(4);
-    
+	
     // TODO add your implementation here to replace the random response. 
+    System.out.println("      i = " + i );
+	System.out.println("Command = " + commands[i] );
     
     return commands[i];
   }
