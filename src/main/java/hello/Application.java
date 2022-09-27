@@ -59,12 +59,17 @@ public class Application {
     String[] commands = new String[]{"F", "R", "L", "T"};
     int i = new Random().nextInt(4);
 	PlayerState myState = new PlayerState();
+	PlayerState myState = new PlayerState();
+
+    List myDim = new List(arenaUpdate.arena.dims);
 	myState = (PlayerState)arenaUpdate.arena.state.get("https://cloud-run-hackathon-java-springboot-yzqf6q4kqq-uc.a.run.app");
+	System.out.println("y = " + myDim.get(0) + ", x = " + myDim.get(1) );
+	//if (myState.
 	//this.arena = arenaUpdate.get("arena")
     // TODO add your implementation here to replace the random response. 
-    System.out.println("x = " + myState.x + ", y = " + myState.y );
+    // System.out.println("x = " + myState.x + ", y = " + myState.y );
     //System.out.println("Direction = " + arenaUpdate.arena.state.get("direction"));
-    System.out.println("i = " + i + ", Command = " + commands[i] );
+    // System.out.println("i = " + i + ", Command = " + commands[i] );
 	
 //	return "F";
     
