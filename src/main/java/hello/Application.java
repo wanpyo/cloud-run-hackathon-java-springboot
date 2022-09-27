@@ -64,8 +64,8 @@ public class Application {
 	PlayerState myState = new PlayerState();
 	myState = (PlayerState)arenaUpdate.arena.state.get("https://cloud-run-hackathon-java-springboot-yzqf6q4kqq-uc.a.run.app");
 
-    if (myState.wasHit) return "T";
-	
+    if (myState.wasHit) return "L";
+    return "T";
 	List<Integer> myDim = arenaUpdate.arena.dims;
 	
 	if (myState.direction.equals("W")) {
@@ -77,7 +77,7 @@ public class Application {
 	System.out.println("x = " + myState.x + ", y = " + myState.y );
 	System.out.println("Direction = " + myState.direction );
 	
-    return "T";
+
   }
 
 }
