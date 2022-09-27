@@ -70,8 +70,8 @@ public class Application {
 	System.out.println("Direction = " + myState.direction );
 	
 	if (myState.wasHit) return "T";
-//	else return "L";
- //    return commands[i];
+	else return "T";
+//    return commands[i];
   }
 
 }
