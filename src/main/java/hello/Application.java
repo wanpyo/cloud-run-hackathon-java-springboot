@@ -60,7 +60,7 @@ public class Application {
     int i = new Random().nextInt(4);
 	String command = commands[i];
 
-    HashedList myDim = new List(arenaUpdate.arena.dims);
+    List<Integer> myDim = arenaUpdate.arena.dims;
 	System.out.println("y = " + myDim.get(0) + ", x = " + myDim.get(1) );
 
 	PlayerState myState = new PlayerState();
