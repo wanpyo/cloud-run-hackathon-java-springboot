@@ -60,7 +60,7 @@ public class Application {
     int i = new Random().nextInt(4);
 	
     // TODO add your implementation here to replace the random response. 
-    //System.out.println("x = " + arenaUpdate.get("x") + ", y = " + arenaUpdate.get("y") );
+    System.out.println("x = " + arenaUpdate.get("x") + ", y = " + arenaUpdate.get("y") );
     //System.out.println("Direction = " + arenaUpdate.arena.state.get("direction"));
     System.out.println("i = " + i + ", Command = " + commands[i] );
 	
