@@ -63,9 +63,9 @@ public class Application {
     System.out.println("      i = " + i );
 	System.out.println("Command = " + commands[i] );
 	
-	return "F";
+//	return "F";
     
-//    return commands[i];
+    return commands[i];
   }
 
 }
