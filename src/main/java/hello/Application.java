@@ -66,16 +66,17 @@ public class Application {
 
     if (myState.wasHit) return "L";
     return "T";
-	List<Integer> myDim = arenaUpdate.arena.dims;
-	
-	if (myState.direction.equals("W")) {
-		if ( myState.x > 0 ) return "F";
-		return "L";
-	}
 
-	//System.out.println("Dim x = " + myDim.get(0) + ", Dim y = " + myDim.get(1) );
-	System.out.println("x = " + myState.x + ", y = " + myState.y );
-	System.out.println("Direction = " + myState.direction );
+//	List<Integer> myDim = arenaUpdate.arena.dims;
+//	
+//	if (myState.direction.equals("W")) {
+//		if ( myState.x > 0 ) return "F";
+//		return "L";
+//	}
+//
+//	//System.out.println("Dim x = " + myDim.get(0) + ", Dim y = " + myDim.get(1) );
+//	System.out.println("x = " + myState.x + ", y = " + myState.y );
+//	System.out.println("Direction = " + myState.direction );
 	
 
   }
