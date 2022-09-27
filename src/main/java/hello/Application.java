@@ -77,7 +77,7 @@ public class Application {
 	System.out.println("x = " + myState.x + ", y = " + myState.y );
 	System.out.println("Direction = " + myState.direction );
 	
-    return commands[i];
+    return "T";
   }
 
 }
